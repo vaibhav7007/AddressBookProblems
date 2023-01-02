@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -96,6 +97,25 @@ namespace AddreessBook
                     }
                     Console.WriteLine("FirstName:{0}\nLastName:{1}\nAddress:{2}\nCity:{3}\nState:{4}\nZipCode:{5}\nPhoneNumber:{6}\nEmail{7}"
                                      , Data.fname, Data.lname, Data.address, Data.city, Data.state, Data.zipcode, Data.PhoneNumber, Data.email);
+                }
+            }
+        }
+
+        //UC4 Deleting Contact
+        public void Delete()
+        {
+            Console.WriteLine("Enter first name to delete");
+            string firstname = Console.ReadLine();
+            foreach (var Data1 in add)
+            {
+                if (Data1.fname == firstname)
+                {
+                    add.Remove(Data1);
+                    Console.WriteLine("Successfully removed");
+                }
+                else
+                {
+                    Console.WriteLine("Contact not present");
                 }
             }
         }
