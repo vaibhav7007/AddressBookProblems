@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AddreessBook
 {
-    class ContactDetails
+    internal class ContactDetails
     {
         public string fname { get; set; }
         public string lname { get; set; }

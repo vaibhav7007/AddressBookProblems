@@ -1,4 +1,4 @@
-﻿using AddressBookProblems.AddreessBook;
+﻿using AddressBookProblems;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AddreessBook
 {
-    class AddressBook
+    internal class AddressBook
     {
         List<ContactDetails> add = new List<ContactDetails>();
         public void Details()
