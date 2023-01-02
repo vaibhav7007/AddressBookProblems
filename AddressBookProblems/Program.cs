@@ -9,7 +9,7 @@ namespace AddreessBook
             Console.WriteLine("Welcome to the addressbook problems");
             AddressBook addressBook = new AddressBook();
             addressBook.Details(); //UC1
-            //addressBook.Display(); //UC2
+            addressBook.Display(); //UC2
         }
     }
 }

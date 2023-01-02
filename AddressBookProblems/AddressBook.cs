@@ -1,5 +1,4 @@
-﻿using AddressBookProblems;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AddreessBook
 {
-    internal class AddressBook
+    class AddressBook
     {
         List<ContactDetails> add = new List<ContactDetails>();
         public void Details()
@@ -32,19 +31,19 @@ namespace AddreessBook
 
             add.Add(contactDetails);
         }
-        //public void Display()  //UC2
-        //{
-        //    foreach(ContactDetails contactDetails in add)
-        //    {
-        //        Console.WriteLine("\nFirstName: "+contactDetails.fname);
-        //        Console.WriteLine("LastName: " +contactDetails.lname);
-        //        Console.WriteLine("Address " + contactDetails.address);
-        //        Console.WriteLine("City :" + contactDetails.city);
-        //        Console.WriteLine("State:"+contactDetails.state);
-        //        Console.WriteLine("ZipCode:"+contactDetails.zipcode);
-        //        Console.WriteLine("PhoneNumber: " + contactDetails.PhoneNumber);
-        //        Console.WriteLine("Email: " + contactDetails.email);
-        //    }
-        //}
+        public void Display()  //UC2
+        {
+            foreach (ContactDetails contactDetails in add)
+            {
+                Console.WriteLine("\nFirstName: " + contactDetails.fname);
+                Console.WriteLine("LastName: " + contactDetails.lname);
+                Console.WriteLine("Address " + contactDetails.address);
+                Console.WriteLine("City :" + contactDetails.city);
+                Console.WriteLine("State:" + contactDetails.state);
+                Console.WriteLine("ZipCode:" + contactDetails.zipcode);
+                Console.WriteLine("PhoneNumber: " + contactDetails.PhoneNumber);
+                Console.WriteLine("Email: " + contactDetails.email);
+            }
+        }
     }
 }
