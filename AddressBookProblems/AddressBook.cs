@@ -14,6 +14,7 @@ namespace AddreessBook
         public void Details()
         {
             ContactDetails contactDetails = new ContactDetails();
+            Console.WriteLine("Enter Details of person");
             Console.WriteLine("Enter the first name");
             contactDetails.fname = Console.ReadLine();
             Console.WriteLine("Enter the last name");
@@ -30,13 +31,13 @@ namespace AddreessBook
             contactDetails.PhoneNumber = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Enter the email");
             contactDetails.email = Console.ReadLine();
-
             add.Add(contactDetails);
         }
         public void Display()  //UC2
         {
             foreach (ContactDetails contactDetails in add)
             {
+                Console.WriteLine("Details of person in addressbook ");
                 Console.WriteLine("\nFirstName: " + contactDetails.fname);
                 Console.WriteLine("LastName: " + contactDetails.lname);
                 Console.WriteLine("Address " + contactDetails.address);
@@ -45,9 +46,9 @@ namespace AddreessBook
                 Console.WriteLine("ZipCode:" + contactDetails.zipcode);
                 Console.WriteLine("PhoneNumber: " + contactDetails.PhoneNumber);
                 Console.WriteLine("Email: " + contactDetails.email);
+
             }
         }
-
         //UC3 Edit the contact
         public void Edit()
         {
