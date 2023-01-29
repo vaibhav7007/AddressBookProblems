@@ -11,7 +11,7 @@ namespace AddreessBook
             while (true)
             {
                 Console.WriteLine("Choose the option from below");
-                Console.WriteLine("\n1.Add\n2.Display\n3.Edit\n4.Delete");
+                Console.WriteLine("\n1.Add\n2.Display\n3.Edit\n4.Delete\n5.AddressBook");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -27,8 +27,8 @@ namespace AddreessBook
                     case 4:
                         addressBook.Delete();//UC4
                         break;
-                    default:
-                        Console.WriteLine("Enter correct option");
+                    case 5:
+                        addressBook.MultipleAddressBook();//UC6
                         break;
                 }
             }
