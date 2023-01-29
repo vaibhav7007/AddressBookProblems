@@ -140,5 +140,25 @@ namespace AddreessBook
                 i++;
             }
         }
+
+        //UC7 Duplicae person searching using lambda expression
+        public void DuplicateNames()
+        {
+            Console.WriteLine("Enter to first name to check");
+            string first_Name = Console.ReadLine();
+
+            foreach (var data in add)
+            {
+                if (data.fname == first_Name)
+                {
+                    Console.WriteLine("Contact already present");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Entering new Contact");
+                }
+            }
+        }
     }
 }
